@@ -1,3 +1,4 @@
+import 'package:citadel/misc/utilities.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/homescreen.dart';
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Citadel',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: CitadelColors.darkBlue,
+        fontFamily: 'Poppins',
       ),
       home: const HomeScreen(title: 'Citadel'),
     );

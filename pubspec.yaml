@@ -50,6 +50,11 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
 
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/icon.png"
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -78,10 +83,28 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-   - family: Nunito
+   - family: JosefinSans
      fonts:
-       - asset: assets/fonts/Nunito/Nunito-Regular.ttf
-       - asset: assets/fonts/Nunito/Nunito-Black.ttf
+       - asset: assets/fonts/Josefin_Sans/JosefinSans-Regular.ttf
+       - asset: assets/fonts/Josefin_Sans/JosefinSans-Bold.ttf
+         weight: 700
+   - family: Quicksand
+     fonts:
+       - asset: assets/fonts/Quicksand/Quicksand-Regular.ttf
+       - asset: assets/fonts/Quicksand/Quicksand-Medium.ttf
+         weight: 300
+       - asset: assets/fonts/Quicksand/Quicksand-Bold.ttf
+         weight: 700
+   - family: Poppins
+     fonts:
+       - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+       - asset: assets/fonts/Poppins/Poppins-Thin.ttf
+         weight: 100
+       - asset: assets/fonts/Poppins/Poppins-Light.ttf
+         weight: 300
+       - asset: assets/fonts/Poppins/Poppins-Medium.ttf
+         weight: 500
+       - asset: assets/fonts/Poppins/Poppins-Black.ttf
          weight: 700
   #   - family: Trajan Pro
   #     fonts:

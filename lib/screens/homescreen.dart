@@ -1,5 +1,4 @@
 import 'package:citadel/misc/utilities.dart';
-import 'package:citadel/widgets/polloption.dart';
 import 'package:citadel/widgets/postbox.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +15,10 @@ class HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Center(child: Image.asset('assets/icons/icon.png', fit: BoxFit.contain, height: 56,)),
+        elevation: 0,
+      ),
       body: Center(
         child: ListView(
           physics: const BouncingScrollPhysics(),

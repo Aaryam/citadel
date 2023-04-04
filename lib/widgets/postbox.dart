@@ -29,6 +29,7 @@ class PostBox extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              Padding(padding: EdgeInsets.only(top: 8.0)),
               Row(
                 children: <Widget>[
                   Padding(
@@ -62,7 +63,8 @@ class PostBox extends StatelessWidget {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 20.0, bottom: 8.0, left: 12.0, right: 12.0),
+                padding: const EdgeInsets.only(
+                    top: 20.0, bottom: 8.0, left: 12.0, right: 12.0),
                 child: SelectableText(
                   content,
                   style: const TextStyle(
@@ -70,81 +72,46 @@ class PostBox extends StatelessWidget {
                   ),
                 ),
               ),
-              Row(
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                    child: Row(
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 8.0),
+                child: Row(
+                  children: <Widget>[
+                    Row(
                       children: <Widget>[
-                        Row(
-                          children: <Widget>[
-                            IconButton(
-                              icon: const Icon(
-                                Icons.favorite_outline,
-                                size: 20.0,
-                              ),
-                              onPressed: () {},
-                            ),
-                            const Text(
-                              '6.2k',
-                              style: TextStyle(
-                                fontSize: 12,
-                              ),
-                            )
-                          ],
+                        IconButton(
+                          icon: const Icon(
+                            Icons.favorite_outline,
+                            size: 20.0,
+                          ),
+                          onPressed: () {},
                         ),
+                        const Text(
+                          '12.1k',
+                          style: TextStyle(
+                            fontSize: 12,
+                          ),
+                        )
                       ],
                     ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 8.0),
-                    child: Row(
+                    Row(
                       children: <Widget>[
-                        Row(
-                          children: <Widget>[
-                            IconButton(
-                              icon: const Icon(
-                                Icons.mode_comment_outlined,
-                                size: 20.0,
-                              ),
-                              onPressed: () {},
-                            ),
-                            const Text(
-                              '308',
-                              style: TextStyle(
-                                fontSize: 12,
-                              ),
-                            )
-                          ],
+                        IconButton(
+                          icon: const Icon(
+                            Icons.mode_comment_outlined,
+                            size: 20.0,
+                          ),
+                          onPressed: () {},
                         ),
+                        const Text(
+                          '803',
+                          style: TextStyle(
+                            fontSize: 12,
+                          ),
+                        )
                       ],
                     ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 8.0),
-                    child: Row(
-                      children: <Widget>[
-                        Row(
-                          children: <Widget>[
-                            IconButton(
-                              icon: const Icon(
-                                Icons.bookmark_outline,
-                                size: 20.0,
-                              ),
-                              onPressed: () {},
-                            ),
-                            const Text(
-                              '127',
-                              style: TextStyle(
-                                fontSize: 12,
-                              ),
-                            )
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ],
           ),

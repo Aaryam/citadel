@@ -1,4 +1,5 @@
 import 'package:citadel/misc/utilities.dart';
+import 'package:citadel/screens/profilescreen.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/homescreen.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: CitadelColors.darkBlue,
         fontFamily: 'Poppins',
       ),
-      home: const HomeScreen(title: 'Citadel'),
+      home: const ProfileScreen(title: 'Citadel'),
     );
   }
 }

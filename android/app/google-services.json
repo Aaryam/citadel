@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "209703265799",
+    "project_id": "onyx-e312d",
+    "storage_bucket": "onyx-e312d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209703265799:android:0ee10dbe8a3bf226012ca2",
+        "android_client_info": {
+          "package_name": "com.quiverr.citadel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209703265799-ug9grc4i172g11gtfg3u6ckh185o5pt9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quiverr.citadel",
+            "certificate_hash": "2fa2e22f953f9f09e07207286405a90d74e6866a"
+          }
+        },
+        {
+          "client_id": "209703265799-stne32j9o22c2aao5fgg1qgert5es6vb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEPE-hIOO9bv0PyvpY9MwrIa47i3QiAFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209703265799-fi6dadg2fhcr1ak37d0a0f5db7ft0tht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

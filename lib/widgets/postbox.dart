@@ -1,4 +1,3 @@
-import 'package:citadel/misc/utilities.dart';
 import 'package:flutter/material.dart';
 
 class PostBox extends StatelessWidget {
@@ -29,7 +28,7 @@ class PostBox extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Padding(padding: EdgeInsets.only(top: 8.0)),
+              const Padding(padding: EdgeInsets.only(top: 8.0)),
               Row(
                 children: <Widget>[
                   Padding(
@@ -73,7 +72,7 @@ class PostBox extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 8.0),
+                padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 child: Row(
                   children: <Widget>[
                     Row(

@@ -1,40 +1,35 @@
 import 'package:citadel/misc/utilities.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key, required this.title});
-
-  final String title;
+class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
 
   @override
-  State<HomeScreen> createState() => HomeScreenState();
+  State<LoginScreen> createState() => LoginScreenState();
 }
 
-class HomeScreenState extends State<HomeScreen> {
+class LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Center(child: Text('Timeline')), // Image.asset('assets/icons/icon.png', fit: BoxFit.contain, height: 56,)
-        elevation: 0,
-      ),
+      backgroundColor: Colors.white,
       body: Center(
         child: ListView(
           physics: const BouncingScrollPhysics(),
           children: const <Widget>[
-            
+
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
-          await AuthenticationUtilities.signOut();
+          await AuthenticationUtilities.signInWithGoogle(context: context);
+          // Navigator.pop(context);
         },
         backgroundColor: CitadelColors.darkBlue,
         elevation: 0,
         child: const Icon(
-          Icons.add,
+          Icons.login,
           color: Colors.white,
         ),
       ),
